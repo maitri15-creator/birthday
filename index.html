@@ -2,7 +2,6 @@
 <html>
 
 <head>
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Birthday Countdown</title>
 
@@ -31,12 +30,20 @@ body {
 
 #title {
     font-size: 36px;
+    margin-bottom: 15px;
 }
 
 #timer {
     font-size: 30px;
     margin-top: 10px;
     font-weight: bold;
+}
+
+.calendar {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0 15px 0;
+    border-radius: 15px;
 }
 
 .couple {
@@ -69,13 +76,6 @@ button {
     cursor: pointer;
 }
 
-.calendar {
-    width: 100%;
-    max-width: 300px;
-    margin-top: 20px;
-    border-radius: 15px;
-}
-
 .heart {
     position: fixed;
     top: -10px;
@@ -88,15 +88,17 @@ button {
     100% { transform: translateY(110vh) }
 }
 </style>
-
 </head>
 
 <body>
-
 <div class="container">
 
     <div id="title">Birthday Countdown</div>
 
+    <!-- Calendar image BELOW title -->
+    <img src="calendar.png" class="calendar">
+
+    <!-- Couple GIF -->
     <img class="couple" src="https://media.tenor.com/6Z0fQ8qN8L8AAAAi/couple-hug.gif">
 
     <div id="timer"></div>
@@ -109,8 +111,6 @@ button {
     </div>
 
     <button onclick="playSong()">Play Our Song ❤️</button>
-
-    <img src="calendar.png" class="calendar">
 
 </div>
 
@@ -187,4 +187,3 @@ updateTimer();
 
 </body>
 </html>
-
